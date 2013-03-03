@@ -25,7 +25,8 @@ body {
 	line-height: 1.4em;
 	background: #eaeaea url('bg.png');
 	color: #4d4d4d;
-	width: 550px;
+	min-width: 270px;
+	max-width: 550px;
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
@@ -37,7 +38,7 @@ body {
 #todoapp {
 	background: #fff;
 	background: rgba(255, 255, 255, 0.9);
-	margin: 130px 0 40px 0;
+	margin: 130px 10px 40px 10px;
 	border: 1px solid #ccc;
 	position: relative;
 	border-top-left-radius: 2px;
@@ -248,6 +249,7 @@ label[for='toggle-all'] {
 	-ms-transition: color 0.4s;
 	-o-transition: color 0.4s;
 	transition: color 0.4s;
+	-webkit-user-select: none;
 }
 
 #todo-list li.completed label {
@@ -411,4 +413,16 @@ label[for='toggle-all'] {
 
 .hidden{
 	display:none;
+}
+
+@media screen and (max-width: 450px) {
+  #filters {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 370px) {
+	#new-todo, .edit, #todo-list li {
+		font-size: 20px;
+	}
 }
