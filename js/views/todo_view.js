@@ -1,8 +1,7 @@
 Todos.TodoView = Ember.View.extend({
-	tagName: 'li',
-	classNameBindings: ['todo.isCompleted:completed', 'isEditing:editing'],
+	tagName: 'label',
 
 	doubleClick: function(event) {
-		this.set('isEditing', true);
+		this.set('controller.isEditing', true);
 	}
 });

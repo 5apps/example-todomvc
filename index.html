@@ -28,7 +28,7 @@
                   {{view Todos.EditTodoView todoBinding="this"}}
                 {{else}}
                   {{view Ember.Checkbox checkedBinding="isCompleted" class="toggle"}}
-                  <label {{action "editTodo" on="doubleClick"}}>{{title}}</label>
+                  {{#view Todos.TodoView todoBinding="this"}}{{title}}{{/view}}
                   <button {{action "removeTodo"}} class="destroy"></button>
                 {{/if}}
                 </li>
