@@ -417,11 +417,11 @@ label[for='toggle-all'] {
 
 @media screen and (max-width: 450px) {
   #todoapp {
-    margin-top: 65px;
+    margin-top: 90px;
   }
 
   #todoapp h1 {
-    top: -85px;
+    top: -95px;
     font-size: 50px;
   }
 
